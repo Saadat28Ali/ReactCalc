@@ -3,14 +3,14 @@
 
 <h1> Technologies </h1>
 <p>
-  - HTML
-  - CSS
-  - JS
-  - React
-  - Node
+  - HTML <br>
+  - CSS <br> 
+  - JS <br>
+  - React <br>
+  - Node <br>
 </p>
 
 <h1> Running </h1>
 <p>
-  ``` npm start ```
+  > npm start
 </p>
