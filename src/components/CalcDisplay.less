@@ -1,0 +1,102 @@
+@main_font_family: "Arial";
+
+.Display {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    // align-self: flex-start;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    
+    // width: 25vw;
+    width: 345px;
+    height: 20%;
+
+    font-family: @main_font_family;
+
+    padding: 20px 0px 20px 0px;
+
+    border-radius: 10px;
+
+    word-wrap:break-word;
+    word-break: break-all;
+    text-wrap: pretty;
+
+}
+
+.Display > * {
+    display: inline;
+    margin: 5px 25px 5px 25px;
+
+    text-align: right;
+}
+
+.DisplayLower {
+    font-weight: 900;
+    font-size: 5vh;
+
+    &:hover {
+        transform: scale(1.05);
+
+        animation-name: growLower;
+        animation-duration: 0.1s;
+    }
+}
+
+@keyframes growLower {
+    from {
+        // zoom: 100%;
+        transform: scale(1.00);
+
+    }
+    to {
+        // zoom: 105%
+        transform: scale(1.05);
+
+    }
+}
+
+.DisplayUpper {
+    font-size: 3vh;
+    height: 10px;
+
+    &:hover {
+        transform: scale(1.02);
+
+
+        animation-name: growUpper;
+        animation-duration: 0.1s;
+    }
+}
+
+@keyframes growUpper {
+    from {
+        transform: scale(1.00);
+    }
+    to {
+        transform: scale(1.02);
+    }
+}
+
+// .DecorFrame {
+//     // display: inline;
+//     // display: flex;  
+
+//     border: 3px solid rgba(255, 255, 255, 0.5);
+//     border-radius: 10px;
+//     position: absolute;
+//     left: 35vw;
+//     top: 4%;
+
+//     height: 705px;
+//     width: 460px;
+
+//     // z-index: -9;
+
+//     background-color: rgba(255, 255, 255, 0.2);
+
+// }
